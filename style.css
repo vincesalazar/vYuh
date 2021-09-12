@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Lato&family=Open+Sans&family=PT+Sans+Narrow&family=Permanent+Marker&family=Roboto&family=Shadows+Into+Light+Two&display=swap');
+FONTS {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a[id="blue"] {
+    color: #06AED5;
+}
+
+a[id="blue"]:hover {
+    opacity: .7;
+}
+
+span[id="red"] {
+    color: #EA526F;
+}
+
+span[id="red"]:hover {
+    opacity: .7;
+}
+
+span[id="blue"] {
+    color: #06AED5;
+}
+
+span[id="blue"]:hover {
+    opacity: .7;
+}
+
+span[id="yellow"] {
+    color: #FFBA49;
+}
+
+span[id="yellow"]:hover {
+    opacity: .7;
+}
+
+span[id="turq"] {
+    color: #00D9C0;
+}
+
+span[id="turq"]:hover {
+    opacity: .7;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000;
+    transition: opacity .3s;
+}
+
+
+/* LANDING PAGE */
+
+.landing {
+    height: 100vh;
+    background-color: #222222;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.landing .name {
+    position: absolute;
+    top: 3.5%;
+    left: 2%;
+    font-size: 2vw;
+    color: #e4e4e4;
+    cursor: default;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.landing .top-right {
+    position: absolute;
+    top: 3.5%;
+    right: 2%;
+    font-size: 1.5vw;
+    color: #fffffffd;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.landing .middle {}
+
+.landing #intro .left {
+    display: none;
+}
+
+.landing #intro .right {
+    overflow-x: visible;
+}
+
+.landing #taskMan {
+    display: none;
+}
+
+.landing #inso {
+    display: none;
+}
+
+.landing #inso .left {
+    width: 50vw;
+    margin: 0;
+}
+
+.landing #inso .right {
+    width: initial;
+}
+
+.landing .middle .card {
+    width: 100vw;
+    height: 80vh;
+    word-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .middle .card .topic {
+    font-size: 2.25vw;
+    font-family: "Amatic SC";
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    color: white;
+}
+
+.landing .middle .card .description {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5vw;
+    color: #eeeeee;
+    letter-spacing: 1px;
+}
+
+.landing .middle .card .left {
+    margin-right: 3rem;
+    /* width: 50vw; */
+}
+
+.landing .middle .card .phone-container {
+    position: relative;
+    width: 15vw;
+    height: 60vh;
+}
+
+.landing .middle .card .right {
+    width: 55vw;
+}
+
+.landing .middle .card .laptop-container {
+    height: 50vh;
+    width: 25vw;
+}
+
+.landing .email {
+    position: absolute;
+    bottom: 3.5%;
+    left: 2%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5vw;
+    color: #fffffffd;
+}
+
+.landing .git-code {
+    position: absolute;
+    bottom: 3.5%;
+    right: 2%;
+    width: 30vw;
+    font-size: 1.45vw;
+    display: flex;
+    justify-content: space-between;
+    color: #f3f3f3;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.landing .git-code a:nth-child(1) {
+    /* font-family: 'Amatic SC', sans-serif; */
+    font-size: 1.55vw;
+}
+
+.landing .git-code a:nth-child(2) {
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.landing .git-code a:nth-child(3) {
+    /* font-family: 'Shadows Into Light Two', sans-serif; */
+    font-size: 1.55vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .landing {}
+    .landing .name {
+        font-size: 3vw;
+    }
+    .landing .top-right {
+        font-size: 2.6vw;
+    }
+    .landing .middle .left {
+        margin-right: 1.5rem;
+    }
+    .landing .middle .card .phone-container {
+        width: 25vw;
+        height: 35vh;
+    }
+    .landing .middle .card .laptop-container {
+        height: 40vh;
+        width: 30vw;
+    }
+    .landing .middle #intro .right {
+        width: 80vw;
+    }
+    .landing .middle .card .topic {
+        font-size: 3.2vw;
+    }
+    .landing .middle .card .description {
+        font-size: 2.8vw;
+    }
+    .landing .email a {
+        font-size: 2.5vw;
+    }
+    .landing .git-code {
+        font-size: 2.3vw;
+        width: 40vw;
+    }
+}
+
+
+/* END LANDING PAGE */
+
+
+/* PROJECTS */
+
+.projects {
+    background-color: #222222f0;
+    display: none;
+    padding: 2rem 0;
+    overflow-x: hidden;
+}
+
+#section-header {
+    margin: 0;
+    text-align: center;
+    color: #ffffff99;
+    font-size: 5vw;
+    font-family: 'Permanent Marker';
+}
+
+#section-header span {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.projects .project {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projects .project .topic {
+    color: white;
+    font-size: 2.4vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.projects .project .description {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5vw;
+    color: #eeeeee;
+}
+
+.projects #projOne .left {
+    position: relative;
+    width: 50vw;
+}
+
+.projects .project .phone-container {
+    width: 20vw;
+    height: 65vh;
+}
+
+.projects #projTwo {}
+
+.projects .project .laptop-container {
+    width: 35vw;
+    height: 60vh;
+}
+
+.projects #projTwo .right {
+    position: relative;
+    width: 50vw;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .projects .project {
+        padding: 0;
+    }
+    .projects .project .topic {
+        font-size: 3.3vw;
+    }
+    .projects .project .description {
+        font-size: 2.8vw;
+    }
+    .projects .project .phone-container {
+        height: 30vh;
+    }
+    .projects .project .laptop-container {
+        height: 30vh;
+        width: 35vw;
+    }
+}
+
+
+/* END PROJECTS */
+
+
+/* FORM SECTION, MADE IN SCSS */
+
+.modal-container {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw; */
+    position: relative;
+    padding: 5vh 3rem 5vh 3rem;
+    box-sizing: border-box;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    overflow-y: hidden;
+}
+
+.modal-container h1 {
+    color: white;
+    margin-top: 1vh;
+    font-size: 3vw;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: "Permanent Marker";
+}
+
+@media (min-width:769px) {
+    .modal-container h1 {
+        width: 60%;
+        font-size: 2.7vw;
+    }
+}
+
+.modal-container form {
+    background-color: #00000044;
+    position: relative;
+    border-radius: 3px;
+    /* box-shadow: white 0px 0px 0px .4px; */
+    border-top: 1px #ffffffaa solid;
+    border-left: 1px #ffffffaa solid;
+    border-right: 1px #ffffff55 solid;
+    border-bottom: 1px #ffffff55 solid;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .3s;
+}
+
+@media (min-width:769px) {
+    .modal-container form {
+        width: 50%;
+    }
+}
+
+.modal-container form:hover {
+    box-shadow: white 0 0 0 0.7px;
+}
+
+.modal-container form .input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 1rem;
+}
+
+.modal-container form .input-field label {
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 769px) {
+    .modal-container form .input-field label {
+        font-size: 1.5vw;
+    }
+}
+
+.modal-container form .input-field label[for="email"] span {
+    color: #ffffff;
+    margin-left: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.modal-container form .input-field input,
+.modal-container form .input-field textarea {
+    font-size: 2vw;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 2px;
+    background-color: #000000dd;
+    color: white;
+    box-shadow: white 0 0 0 0.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-container form .input-field input:hover,
+.modal-container form .input-field textarea:hover {
+    box-shadow: white 0 0 0 0.5px;
+}
+
+.modal-container form .input-field input:focus,
+.modal-container form .input-field textarea:focus {
+    box-shadow: white 0 0 0 0.7px;
+}
+
+@media (min-width: 769px) {
+    .modal-container form .input-field input,
+    .modal-container form .input-field textarea {
+        font-size: 1.5vw;
+    }
+    .modal-container form .input-field textarea {
+        height: 20vh;
+    }
+}
+
+.modal-container form button {
+    font-size: 3vw;
+    align-self: center;
+    margin-bottom: 3vh;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    z-index: 1000;
+    box-shadow: white -.2px -.2px 0 0.5px;
+    padding: 0.5rem 0.75rem;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    transition: box-shadow .5s;
+    letter-spacing: 1px;
+}
+
+.modal-container form button:hover {
+    box-shadow: white 0 0 0 0.8px;
+}
+
+@media (min-width: 769px) {
+    .modal-container form button {
+        font-size: 1.7vw;
+    }
+}
+
+
+/* END FORM SECTION */
